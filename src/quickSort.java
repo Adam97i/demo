@@ -45,6 +45,7 @@ public class quickSort {
         return index;
     }
 
+
     private void swap(int[] arr, int i, int j) {
         if (i == j) {
             return;
