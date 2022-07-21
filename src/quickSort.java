@@ -7,7 +7,6 @@ public class quickSort {
         for(int i= arr.length-1;i>arr.length-1-k;i--){
             System.out.println(arr[i]);
         }
-
     }
     /**
      * 对数组的l..r快速排序，要前k个
