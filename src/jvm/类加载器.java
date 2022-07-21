@@ -5,11 +5,10 @@ package jvm;
  */
 public class 类加载器 {
     public static void main(String[] args) {
-        // application classloader
-        ClassLoader systemClassLoader = ClassLoader.getSystemClassLoader();
-        System.out.println(systemClassLoader);
+        ClassLoader applicationClassLoader = ClassLoader.getSystemClassLoader();
+        System.out.println(applicationClassLoader);
 
-        ClassLoader extensionClassLoader = systemClassLoader.getParent();
+        ClassLoader extensionClassLoader = applicationClassLoader.getParent();
         System.out.println(extensionClassLoader);
 
         /**
