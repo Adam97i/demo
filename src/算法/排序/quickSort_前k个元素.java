@@ -19,7 +19,7 @@ public class quickSort_前k个元素 {
      */
     private void quickSort(int[] arr, int l, int r, int k) {
         if (l < r) {
-            int index = merge(arr, l, r);
+            int index = partition(arr, l, r);
             int rightLen = r - index + 1;
             if (rightLen < k) {
                 quickSort(arr, l, index - 1, k);
@@ -34,7 +34,7 @@ public class quickSort_前k个元素 {
      * 让目标元素处在应处的位置
      * 左边的元素都小于 右边的元素都大于
      */
-    private int merge(int[] arr, int l, int r) {
+    private int partition(int[] arr, int l, int r) {
         int pivot = arr[r];
         int index = l;
         for (int i = l; i < r; i++) {

@@ -12,7 +12,7 @@ public class quickSort {
 
     private void quickSort(int[] arr, int l, int r) {
         if(l<r){
-            int index=merge(arr,l,r);
+            int index= partition(arr,l,r);
             quickSort(arr,l,index-1);
             quickSort(arr,index+1,r);
         }
@@ -23,7 +23,7 @@ public class quickSort {
      * 返回坐标
      *
      */
-    private int merge(int[] arr, int l, int r) {
+    private int partition(int[] arr, int l, int r) {
         int target=arr[r];
         int index=l;
         // 将小于target的移到index左边，维护index
