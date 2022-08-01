@@ -16,4 +16,8 @@ public class setPrint {
         }
     }
 
+    /**
+     * git config --global --unset http.proxy
+     */
+
 }
