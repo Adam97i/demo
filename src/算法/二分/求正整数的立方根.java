@@ -24,7 +24,7 @@ public class 求正整数的立方根 {
     public static void main(String[] args) {
         求正整数的立方根 cur = new 求正整数的立方根();
         cur.getRes(10);
-        cur.getRes(100);
+        cur.getRes(1005445665);
         cur.getRes(27);
         cur.getRes(5);
     }

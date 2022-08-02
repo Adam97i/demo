@@ -41,5 +41,6 @@ public class company {
         company hundsun = new company("hundsun", 8, 11500, 0.12, 11500, 3);
         company alpha = new company("alpha", 8, 9500, 0.08, 9500, 2);
         company lingxi = new company("lingxi", 8, 14000, 0.12, 6000, 1);
+        company wudong = new company("wudong", 8, 13000, 0.12, 13000, 3);
     }
 }
