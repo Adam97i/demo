@@ -5,23 +5,23 @@ import java.util.List;
 public class Company {
     public static void main(String[] args) {
         // 纯base 无绩效，公积金默认12%  公积金基数=社保基数=医保基数
-        Company hundsun = new Company("hundsun", 8, 11500, 3);
-        Company wudong = new Company("wudong", 8.6, 13500, 3);
+        Company hd = new Company("hd", 8, 11500, 3);
+        Company wd = new Company("wd", 8.2, 13500, 3);
         // 纯base,公积金基数和社保基数不同
-        Company lingxi = new Company("lingxi", 8, 14000, 1, 8000, 0.12, 6000);
+        Company lx = new Company("lx", 8, 14000, 1, 8000, 0.12, 6000);
         // 月薪构成  base + 绩效
-        Company huaweiOD = new Company("huaweiOD", 9, 15500, 2, 12500, 0.12);
+        Company oo = new Company("oo", 8.2, 15500, 2, 12500, 0.12);
         // 全部指定类型
         // 公司名称、工时、薪水、年终月数、公积金基数、公积金比例、社保基数、社保比例、医保基数
-        Company a = new Company("a", 8, 9500, 5, 9500, 0.08, 8000, 0.08, 8000);
+        Company al = new Company("al", 8, 9500, 5, 9500, 0.08, 8000, 0.08, 8000);
 
         // 按时薪从高到低输出
         List<Company> list = new ArrayList<>();
-        list.add(hundsun);
-        list.add(wudong);
-        list.add(lingxi);
-        list.add(huaweiOD);
-        list.add(a);
+        list.add(hd);
+        list.add(wd);
+        list.add(lx);
+        list.add(oo);
+        list.add(al);
 
         Collections.sort(list, (x, y) -> (int) (y.hourSalary - x.hourSalary));
         System.out.println("---------时薪排序---------");
