@@ -13,7 +13,7 @@ public class Company {
         Company oo = new Company("oo", 8.2, 15500, 2, 12500, 0.12);
         // 全部指定类型
         // 公司名称、工时、薪水、年终月数、公积金基数、公积金比例、社保基数、社保比例、医保基数
-        Company al = new Company("al", 8, 9500, 5, 9500, 0.08, 8000, 0.08, 8000);
+        Company al = new Company("al", 8, 9500, 2, 9500, 0.08, 8000, 0.08, 8000);
 
         // 按时薪从高到低输出
         List<Company> list = new ArrayList<>();
