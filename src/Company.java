@@ -42,7 +42,7 @@ public class Company {
 
 
     String name;
-    // 每日平均工时
+    // 每日工时
     double dayHour;
     // 月薪
     int salary;

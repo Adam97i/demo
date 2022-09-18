@@ -1,27 +1,25 @@
-import java.util.Stack;
-
+import java.util.HashMap;
+import java.util.Map;
 
 public class Solution {
-    // 栈
-    public boolean judge(String s) {
-        Stack<Character> stack = new Stack<>();
-        for (char c : s.toCharArray()) {
-            if (c == '(') {
-                stack.push(')');
-            } else if (c == '{') {
-                stack.push('}');
-            } else if (c == '[') {
-                stack.push(']');
-            } else {
-                if (stack.peek() == c) {
-                    stack.pop();
-                }
+
+    // O(n) O(n)
+    public int majorityElement(int[] nums) {
+        Map<Integer,Integer> map=new HashMap<>();
+        for(int i:nums){
+            map.put(i,map.getOrDefault(i,0)+1);
+        }
+        int n=nums.length;
+
+        for(Map.Entry<Integer,Integer> entry :map.entrySet()){
+            if(entry.getValue()>n/2){
+                return entry.getKey();
             }
         }
-        return stack.isEmpty();
+        return -1;
     }
-
     public static void main(String[] args) {
         Solution solution = new Solution();
+        int[][] arr = new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
     }
 }

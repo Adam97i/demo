@@ -1,3 +1,6 @@
+import java.util.HashSet;
+import java.util.Set;
+
 public class setPrint {
     public static void main(String[] args) {
         Integer a =Integer.valueOf(100);
@@ -6,8 +9,16 @@ public class setPrint {
         Integer c =Integer.valueOf(999);
         Integer d =Integer.valueOf(999);
         System.out.println(c==d);  // false ,新的不同的对象
+        Integer aa=0;
+        add(aa);
+        System.out.println(aa);
 
     }
+
+    private static void add(Integer aa) {
+        aa++;
+    }
+
     public static void test() {
         try {
             System.exit(1);
